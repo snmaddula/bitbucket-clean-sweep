@@ -1,1 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:hawk-bitbucket-leak
+    username: sa
+    password: 
+    
+  h2:
+    console:
+      enabled: true
+      path: /db
 
+hawk-leak:
+  base-uri: https://<MY_BITBUCKET_HOST_NAME>/rest/api/1.0/projects
+  repo-uri: /PROJECT_NAME/repos 
+  username: <USERNAME> 
+  password: <PASSWORD>
